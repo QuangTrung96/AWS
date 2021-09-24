@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1: Cài đặt máy chủ EC2/Linux</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h1 class="text-danger text-center"><strong>Bài 1: Cài đặt máy chủ EC2/Linux</strong></h1>
+        <ul>
+            <li class="text-danger">chmod 400 trinhquangtrung1.pem</li>
+            <li>chmod 400 'trinhquangtrung1.pem'</li>
+            <li>chmod 400 "trinhquangtrung1.pem"</li>
+        </ul>
+        <hr />
+        <ul>
+            <li class="text-danger">ssh -i trinhquangtrung1.pem ec2-user@13.229.239.46</li>
+            <li>ssh -i 'trinhquangtrung1.pem' ec2-user@13.229.239.46</li>
+            <li>ssh -i "trinhquangtrung1.pem" ec2-user@13.229.239.46</li>
+        </ul>
+        <hr />
+        <ul>
+            <li class="text-danger">ssh -i trinhquangtrung1.pem ec2-user@ec2-13-229-239-46.ap-southeast-1.compute.amazonaws.com</li>
+            <li>ssh -i 'trinhquangtrung1.pem' ec2-user@ec2-13-229-239-46.ap-southeast-1.compute.amazonaws.com</li>
+            <li>ssh -i "trinhquangtrung1.pem" ec2-user@ec2-13-229-239-46.ap-southeast-1.compute.amazonaws.com</li>
+        </ul>
+        <hr />
+        <div>
+            <span>Public IP address: <strong>13.229.239.46</strong></span><br />
+            <span>Public DNS: <strong>ec2-13-229-239-46.ap-southeast-1.compute.amazonaws.com</strong></span><br />
+            <span>User name: <strong>ec2-user, ubuntu</strong></span>
+        </div>
+        <hr />
+        <span>Install telnet on ubuntu: <strong>apt-get install telnet</strong></span>
+        <hr />
+        <ul>
+            <li>telnet 13.212.144.156 22 // enter to quit</li>
+            <li>telnet ec2-13-212-144-156.ap-southeast-1.compute.amazonaws.com 22 // enter to quit</li>
+        </ul>
+        <hr />
+        <ul>
+            <li>telnet 13.212.144.156 80 // ctrl + c to quit</li>
+            <li>telnet ec2-13-212-144-156.ap-southeast-1.compute.amazonaws.com 80 // ctrl + c to quit</li>
+        </ul>
+        <hr />
+        <ul>
+            <li>telnet localhost 22 // enter to quit</li>
+            <li>telnet localhost 80 // ctrl + c to quit</li>
+        </ul>
+        <hr />
+        <ul>
+            <li>telnet bongtq.tk 22 // enter to quit</li>
+            <li>telnet bongtq.tk 80 // ctrl + c to quit</li>
+        </ul>
+        <hr />
+        <span>=> Test connect to server by SSH</span>
+        <ul>
+            <li>response: ssh opening</li>
+            <li>not respone: ssh closed</li>
+        </ul>
+        <hr />
+        <span>Một số tool dùng để kết nối Client tới Server:</span>
+        <ul>
+            <li>Poderosa (window)</li>
+            <li>Putty (window, linux, mac)</li>
+            <li>Winscp (window, linux, mac)</li>
+            <li>Filezilla (window, linux, mac)</li>
+        </ul>
+        <hr />
+        <div class="row">
+            <div class="col col-md-6">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=WGk3nT05bxs" target="_blank">https://www.youtube.com/watch?v=WGk3nT05bxs</a>
+                </div>
+                <img style="width: 100%;" src="./images/image1.1.png" alt="Quy định về tài khoản free 1 năm của AWS" title="Quy định về tài khoản free 1 năm của AWS" srcset="">
+            </div>
+            <div class="col col-md-6">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Q6_7nseLDCw&list=PLjCpH2Qpki-shFG50ICTBdA7oLdfyoH1K" target="_blank">https://www.youtube.com/watch?v=Q6_7nseLDCw&list=PLjCpH2Qpki-shFG50ICTBdA7oLdfyoH1K</a>
+                </div>
+                <img style="width: 100%;" src="./images/image1.2.png" alt="Hướng dẫn sử dụng tool poderosa" title="Hướng dẫn sử dụng tool poderosa" srcset="">
+            </div>
+        </div>
+        <hr />
+        <div>
+            <a href="https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all" target="_blank">AWS Free Tier</a>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col col-md-6">
+                <div>
+                    &nbsp;
+                </div>
+                <img style="width: 100%;" src="./images/image1.3.png" alt="Tạo credit card" title="Tạo credit card" srcset="">
+            </div>
+            <div class="col col-md-6">
+                <div>
+                    &nbsp;
+                </div>
+                <img style="width: 100%;" src="./images/image1.4.png" alt="Kiểm tra kết nối tới Server thông qua SSH" title="Kiểm tra kết nối tới Server thông qua SSH" srcset="">
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col col-md-6">
+                <div>
+                    &nbsp;
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./images/image1.5.png" alt="Kiểm tra kết nối tới Server thông qua SSH" title="Kiểm tra kết nối tới Server thông qua SSH" srcset="">
+                </div>
+            </div>
+            <div class="col col-md-6">
+                <div>
+                    &nbsp;
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./images/image1.6.png" alt="Kiểm tra kết nối tới Server thông qua SSH" title="Kiểm tra kết nối tới Server thông qua SSH" srcset="">
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col col-md-6">
+                <div>
+                    &nbsp;
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./images/image1.7.png" alt="Kết nối tới Server thông qua SSH" title="Kết nối tới Server thông qua SSH" srcset="">
+                </div>
+            </div>
+            <div class="col col-md-6">
+                <div>
+                    &nbsp;
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./images/image1.8.png" alt="Kết nối tới Server thông qua SSH" title="Kết nối tới Server thông qua SSH" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
